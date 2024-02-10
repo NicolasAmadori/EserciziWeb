@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="IT">
+
+<head>
+    <title>Esame</title>
+</head>
+
+<body>
+    <h1>Acquisto libro</h1>
+    <form method="get">
+        <fieldset>
+            <legend>Selezione titoli</legend>
+            <label for="titolo">Titolo: </label>
+            <select id="titolo" name="titolo">
+                <option value="0">Sistemi operativi. Concetti ed esempi, di Abraham Silberschatz et al.</option>
+                <option value="1">Linguaggi di programmazione. Principi e paradigmi, di Maurizio Gabbrielli e Simone Martini</option>
+                <option value="2">I moderni sistemi operativi, di Andrew Tanenbaum</option>
+                <option value="3">Fondamenti di reti di calcolatori, di Andrew Tanenbaum</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Tipo di formato</legend>
+            <label for="flessibile">Copertina Flessibile</label>
+            <input type="radio" id="flessibile" name="tipoCopertina" value="flessibile">
+
+            <label for="rigida">Copertina Rigida</label>
+            <input type="radio" id="rigida" name="tipoCopertina" value="rigida">
+
+            <label for="elettronico">Formato elettroncio</label>
+            <input type="radio" id="elettronico" name="tipoCopertina" value="elettronico">
+        </fieldset>
+        <fieldset>
+            <legend>Informazioni Consegna</legend>
+            <ul>
+                <li>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome">
+                </li>
+                <li>
+                    <label for="cognome">Cognome</label>
+                    <input type="text" id="cognome" name="cognome">
+                </li>
+                <li>
+                    <label for="via">Via</label>
+                    <input type="text" id="via" name="via">
+                </li>
+                <li>
+                    <label for="civico">Numero Civico</label>
+                    <input type="text" id="civico" name="civico">
+                </li>
+                <li>
+                    <label for="città">Città</label>
+                    <input type="text" id="città" name="città">
+                </li>
+                <li>
+                    <label for="provincia">Provincia</label>
+                    <input type="text" id="provincia" name="provincia">
+                </li>
+                <li>
+                    <label for="cap">CAP</label>
+                    <input type="text" id="cap" name="cap">
+                </li>
+                <li>
+                    <label for="orario12">12:00</label>
+                    <input type="radio" name="orario" id="orario12" value="12">
+                    <label for="orario13">13:00</label>
+                    <input type="radio" name="orario" id="orario13" value="13">
+                    <label for="orario14">14:00</label>
+                    <input type="radio" name="orario" id="orario14" value="14">
+                    <label for="orario15">15:00</label>
+                    <input type="radio" name="orario" id="orario15" value="15">
+                    <label for="orario16">16:00</label>
+                    <input type="radio" name="orario" id="orario16" value="16">
+                    <label for="orario17">17:00</label>
+                    <input type="radio" name="orario" id="orario17" value="17">
+                </li>
+            </ul>
+        </fieldset>
+        <label for="pagamentoConsegna">Pagamento alla consegna</label>
+        <input type="checkbox" id="pagamentoConsegna" name="pagamentoConsegna" value="pagamentoAllaConsegna">
+
+        <input type="submit" value="Acquista">
+
+        <label for="annulla" hidden>Annulla</label>
+        <input id="annulla" name="annulla" type="reset" value="Annulla">
+    </form>
+</body>
+
+</html>
