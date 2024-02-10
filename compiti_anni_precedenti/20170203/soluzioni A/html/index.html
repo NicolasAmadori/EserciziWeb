@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="IT">
+    <head>
+        <title>Esercizio 1</title>
+    </head>
+    <body>
+        <form action="POST">
+            <section>
+                <h1>Campi anagrafici</h1>
+                <ul>
+                    <li>
+                        <label for="nome">Nome: </label>
+                        <input type="text" id="nome" placeholder="Nome">
+                    </li>
+                    <li>
+                        <label for="cognome">Cognome: </label>
+                        <input type="text" id="cognome" placeholder="Cognome">
+                    </li>
+                    <li>
+                        <label for="matricola">Matricola: </label>
+                        <input type="text" id="matricola" placeholder="Matricola">
+                    </li>
+                    <li>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" placeholder="Email">
+                    </li>
+                    <li>
+                        <label for="gruppo">Gruppo: </label>
+                        <input type="number" id="gruppo" max="30" min="1">
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h1>Esame</h1>
+                <ul>
+                    <li>
+                        <label for="data">Data: </label>
+                        <input type="date" id="data">
+                    </li>
+                    <li>
+                        <label for="tipologia">Tipologia: </label>
+                        <select id="tipologia">
+                            <option value="orale">Orale</option>
+                            <option value="scritto">Scritto</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="submit"></label>
+                        <input type="submit" id="submit" value="Iscriviti">
+                    </li>
+                </ul>
+            </section>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+/* 
+Tutti i font devono avere lo stesso font-family, che deve essere Arial. La dimensione deve essere del 100%.  
+L’elemento di intestazione <header> ha come sfondo un gradiente che varia dai seguenti colori (dall’alto verso il basso): arancione scuro, arancione, rosso. La sua larghezza è pari al 100%. Margin e padding devono essere simili a quelli riportati nello screenshot.
+Il testo in <header> è di colore bianco ed è allineato al centro.
+L’elemento <section> e l’elemento <nav> sono affiancati, uno accanto all’altro. 
+L’elemento <section> deve occupare il 70% della larghezza e deve avere padding e margin simili a quelli mostrati nello screenshot.
+I paragrafi figli di <section> sono allineati a sinistra e il testo è di colore nero.
+L’elemento <nav> deve occupare il 20% della larghezza e deve avere padding e margini simili a quelli mostrati nello screenshot.
+Gli elementi della lista in <nav> non mostrano alcun tipo di simbolo, sono allineati a destra ed hanno interlinea pari a 2 volte il valore di default. 
+I link in <nav> in caso di hover vengono mostrati con sfondo arancione scuro, colore bianco, in grassetto e con un padding simile a quello mostrato nello screenshot (secondo link nello screenshot). 
+L’elemento <footer> ha come sfondo un gradiente che varia dai seguenti colori (dall’alto verso il basso): rosso, arancione, arancione scuro. La sua larghezza è pari al 100%. Margin e padding devono essere simili a quelli riportati nello screenshot.
+Il testo in <footer> è di colore bianco, è allineato al centro ed ha una dimensione pari all’80%.  
+*/
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+header {
+    background-image: linear-gradient(darkorange, orange, red);
+    width: 100%;
+    padding: 2% 0px;
+    margin: 0px;
+    color: white;
+    text-align: center;
+}
+
+section {
+    display: block;
+    float: left;
+    width: 70%;
+    padding: 3% 2%;
+}
+
+nav {
+    display: block;
+    float: left;
+    width: 20%;
+    margin: 1%;
+    padding: 1%;
+}
+
+nav li {
+    list-style: none;
+    text-align: right;
+    line-height: 2em;
+
+}
+
+nav li a:hover {
+    background-color: darkorange;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1%
+}
+
+section p {
+    color: black;
+    text-align: left;
+}
+
+footer {
+    display: block;
+    background-image: linear-gradient(red, orange, darkorange);
+    width: 100%;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    padding: 1% 0;
+}
+
+footer p {
+    font-size: 80%;
+    text-align: center;
+}
