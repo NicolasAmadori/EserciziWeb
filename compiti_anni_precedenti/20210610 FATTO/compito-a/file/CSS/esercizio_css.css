@@ -1,0 +1,46 @@
+nav {
+    position: fixed;
+    right: 0;
+    width: 20%;
+    border-color: darkgreen;
+    border-style: solid;
+    border-width: 2px;
+    margin: 0 5%;
+}
+
+nav ul li {
+    line-height: 2em;
+}
+
+nav ul li a:hover {
+    background-color: darkgreen;
+    color: white;
+}
+
+header {
+    width: 70%;
+    background-color: lightgreen;
+    border-style: solid;
+    border-color: darkgreen;
+    border-width: 2px;
+    color: black;
+    text-align: center;
+    box-shadow: 5px 7px 5px green;
+}
+
+section {
+    width: 70%;
+    color: black;
+    text-align: left;
+}
+
+footer {
+    width: 70%;
+    border-style: solid;
+    border-color: darkgreen;
+    border-width: 2px;
+    box-shadow: 5px 7px 5px green;
+    font-size: 80%;
+    text-align: center;
+    color: darkgreen;
+}
