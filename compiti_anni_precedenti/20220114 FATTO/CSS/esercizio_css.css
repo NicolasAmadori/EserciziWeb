@@ -1,0 +1,54 @@
+/*
+Margini, padding e discostamento dell’ombreggiatura devono essere simili a quelli riportati nello screenshot. 
+•	La section è affiancata al nav, alla sua sinistra, e occupa lo spazio restante della finestra del browser. Margini e padding devono essere simili a quelli riportati nello screenshot.
+•	Il footer occupa tutta la larghezza della finestra,  Margini, padding e discostamento dell’ombreggiatura devono essere simili a quelli riportati nello screenshot.
+*/
+
+body {
+    font-family: Arial;
+    font-size: 100%;
+}
+
+header {
+    font-weight: bold;
+    color: darkgreen;
+    text-align: center;
+    border-style: dotted;
+    border-color: darkgreen;
+    border-width: 2px;
+    box-shadow: 5px 5px 5px grey;
+    background-color: lightgreen;
+    margin-bottom: 1%;
+}
+
+nav {
+    display: block;
+    float: right;
+    width: 20%;
+    border-style: dotted;
+    border-color: darkgreen;
+    border-width: 2px;
+    box-shadow: 5px 5px 5px grey;
+    background-color: lightgreen;
+}
+
+section {
+    display: block;
+    float: left;
+    width: 79%;
+}
+
+footer {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-style: dotted;
+    border-color: darkgreen;
+    border-width: 2px;
+    box-shadow: 5px 5px 5px grey;
+    background-color: lightgreen;
+    margin: 0 0 5px 0;
+    color: black;
+    text-align: center;
+}

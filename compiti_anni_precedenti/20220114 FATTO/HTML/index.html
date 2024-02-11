@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="IT">
+
+<head>
+    <title>Esame</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th scope="col" id="giorno">Giorno</th>
+            <th scope="col" id="aula">Aula</th>
+            <th scope="col" id="9-10">9:00 - 10:00</th>
+            <th scope="col" id="10-11">10:00 - 11:00</th>
+            <th scope="col" id="11-12">11:00 - 12:00</th>
+        </tr>
+        <tr>
+            <th rowspan="2" scope="row" id="lun">Lunedi</th>
+            <th scope="row" id="2.9">Aula 2.9</th>
+            <td colspan="2" headers="9-10 10-11 lun 2.9">Sistemi Operativi</td>
+            <td headers="11-12 lun 2.9">Informatica e diritto</td>
+        </tr>
+        <tr>
+            <th scope="row" id="3.1">Laboratorio 3.1</th>
+            <td headers="9-10 lun 3.1">Reti di comunicazione</td>
+            <td colspan="2" headers="10-11 lun 3.1">Basi di dati</td>
+        </tr>
+        <tr>
+            <th rowspan="2" scope="row" id="mar">Martedi</th>
+            <th scope="row" id="2.5">Aula 2.5</th>
+            <td headers="9-10 mar 2.5">Programmazione</td>
+            <td headers="10-11 mar 2.5">Analisi Matematica</td>
+            <td headers="11-12 mar 2.5">Algoritmi e strutture dati</td>
+        </tr>
+        <tr>
+            <th scope="row" id="3.3">Laboratorio 3.3</th>
+            <td colspan="2" headers="9-10 10-11 mar 3.3">Tecnologie Web</td>
+            <td headers="11-12 mar 3.3">Programmazione ad oggetti</td>
+        </tr>
+    </table>
+</body>
+
+</html>
