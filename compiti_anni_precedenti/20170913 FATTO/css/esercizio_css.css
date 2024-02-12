@@ -1,0 +1,79 @@
+/* 
+•	Gli elementi <aside> e <section> devono essere paralleli, <aside> a sinistra (occupando circa il 20% della larghezza della finestra del browser, inclusi margini e padding), 
+<section> alla sua destra (occupando circa l’80% della larghezza della finestra del browser, inclusi margini e padding).
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#site_header {
+    border-radius: 20px;
+    border-style: solid;
+    border-color: purple;
+    border-width: 2px;
+    text-align: center;
+    color:purple;
+    padding: 0.5%;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.article_header {
+    color:purple;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+nav > ul,
+nav > ul > li {    
+    display: inline;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: purple;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: white;
+    background-color: purple;
+}
+
+
+footer {
+    margin-top: 25%;
+    text-align: center;
+    width: 100%;
+    color: purple;
+    font-size: 0.9em;
+}
+
+section {
+    width: 80%;
+    box-sizing: border-box;
+    float: right;
+    padding-right: 3%;
+}
+
+aside {
+    color: purple;
+}
+
+@media screen and (min-width: 960px) {
+    aside {
+        width: 20%;
+        display: block;
+        float: left;
+        box-sizing: border-box;
+        padding-right: 4%;
+    }
+}
