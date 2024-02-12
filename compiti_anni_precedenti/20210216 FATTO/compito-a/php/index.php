@@ -6,20 +6,20 @@ foreach(prendiDati($db) as $dato) {
     $valori[$dato["chiave"]] = $dato["valore"];
 }
 
-if(isset($_GET["chiave"]) && isset($_GET["valore"]) && isset($_GET["metodo"])) {
-    switch($_GET["metodo"]) {
+if(isset($_POST["chiave"]) && isset($_POST["valore"]) && isset($_POST["metodo"])) {
+    switch($_POST["metodo"]) {
         case "cookie":
-            if(isset($_COOKIE[$_GET["chiave"]])) {
+            if(isset($_COOKIE[$_POST["chiave"]])) {
                 echo "Chiave già presente nei cookie";
             }
             else {
-                setcookie($_GET["chiave"], $_GET["valore"]);
+                setcookie($_POST["chiave"], $_POST["valore"]);
             }
             break;
         case "db":
             $presente = false;
             foreach($valori as $chiave=>$valore) {
-                if($chiave == $_GET["chiave"]) {
+                if($chiave == $_POST["chiave"]) {
                     $presente = true;
                     break;
                 }
@@ -28,8 +28,8 @@ if(isset($_GET["chiave"]) && isset($_GET["valore"]) && isset($_GET["metodo"])) {
                 echo "Chiave già presente nel db";
             }
             else {
-                aggiungiDato($db, $_GET["chiave"], $_GET["valore"]);
-                $valori[$_GET["chiave"]] = $_GET["valore"];
+                aggiungiDato($db, $_POST["chiave"], $_POST["valore"]);
+                $valori[$_POST["chiave"]] = $_POST["valore"];
             }
             break;
         default:
