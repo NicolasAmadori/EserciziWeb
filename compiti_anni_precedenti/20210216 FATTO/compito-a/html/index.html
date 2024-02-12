@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="IT">
+    <head>
+<title>Esame</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Anagrafica</legend>
+                <ul>
+                    <li>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome">
+                    </li>
+                    <li>
+                        <label for="cognome">Cognome</label>
+                        <input type="text" id="cognome" name="cognome">
+                    </li>
+                    <li>
+                        <label for="dataNascita">Data di Nascita</label>
+                        <input type="date" id="dataNascita" name="dataNascita">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Prenotazione</legend>
+                <ul>
+                    <li>
+                        <label for="tampone">Tampone</label>
+                        <input type="checkbox" id="tampone" name="tampone">
+                        <label for="sierologico">Sierologico</label>
+                        <input type="checkbox" id="sierologico" name="sierologico">
+                        <label for="vaccino">Vaccino</label>
+                        <input type="checkbox" id="vaccino" name="vaccino">
+                    </li>
+                    <li>
+                        <label for="farmacia">Farmacia</label>
+                        <input type="radio" id="farmacia" name="luogo">
+                        <label for="medico">Medico di famiglia</label>
+                        <input type="radio" id="medico" name="luogo">
+                        <label for="ambulatorio">Ambulatorio</label>
+                        <input type="radio" id="ambulatorio" name="luogo">
+                        <label for="ospedale">Ospedale</label>
+                        <input type="radio" id="ospedale" name="luogo">
+                    </li>
+                </ul>
+            </fieldset>
+            <button type="submit" id="submit">Submit</button>
+            <button type="reset" id="cancella">Cancella</button>
+        </form>
+    </body>
+</html>
