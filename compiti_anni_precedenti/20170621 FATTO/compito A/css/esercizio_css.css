@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    border-radius: 15px;
+    border-color: blue;
+    border-style: solid;
+    border-width: 1px;
+    padding: 7px
+}
+
+th {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    text-align: right;
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+}
+
+tfoot td {
+    background-color: orange;
+    text-shadow: 3px 3px 3px blue;
+    text-align: center;
+}
