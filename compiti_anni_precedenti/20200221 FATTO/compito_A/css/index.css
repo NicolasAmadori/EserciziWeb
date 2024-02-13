@@ -1,0 +1,60 @@
+/* form {
+    d
+} */
+
+fieldset {
+    border-style: dotted;
+    border-color: blue;
+    display: inline;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+fieldset:nth-of-type(1) {
+    float: right;
+    padding: 1%;
+}
+
+fieldset:nth-of-type(2) {
+    float: left;
+}
+
+fieldset:nth-of-type(1) label {
+    text-align: center;
+    display: block;
+}
+
+input {
+    display: block;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 1%;
+}
+
+h1 {
+    text-decoration: underline overline;
+    margin-left: 20%;
+}
+
+input[type="submit"] {
+    margin-top: 20%;
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    rotate: -10deg;
+    position: fixed;
+    right: 0;
+    width: 50%;
+    text-decoration: overline;
+    padding: 2em;
+}
+
+input[type="submit"]:hover {
+    transition-duration: 3s;
+    background-color: yellow;
+    color: black;
+}

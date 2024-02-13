@@ -1,0 +1,39 @@
+<!DOCTYPE html >
+<html lang="IT">
+
+<head>
+    <title>Esame</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Iscrizione</h1>
+    <form action="action.php" method="GET">
+        <fieldset>
+            <legend>Informazioni personali</legend>
+            <label for="nome">Nome:* </label>
+            <input type="text" id="nome" name="nome" placeholder="Nome" autocomplete="name" required>
+            <label for="cognome">Cognome:* </label>
+            <input type="text" id="cognome" name="cognome" placeholder="Cognome" autocomplete="family-name" required>
+            <label for="dataNascita">Data di nascita: </label>
+            <input type="date" id="dataNascita" name="dataNascita" min="1900-01-01">
+        </fieldset>
+        <fieldset>
+            <legend>Informazioni aggiuntive</legend>
+            <label for="colore">Scegli un colore </label>
+            <input type="color" id="colore" name="colore" value="#ff0000">
+            <p>Oppure scegli dalla lista:</p>
+            <label for="rosso">Rosso</label>
+            <input type="radio" id="rosso" name="colori" checked>
+            <label for="blu">Blu</label>
+            <input type="radio" id="blu" name="colori">
+            <label for="verde">Verde</label>
+            <input type="radio" id="verde" name="colori">
+            <label for="altro">Altro</label>
+            <input type="radio" id="altro" name="colori">
+        </fieldset>
+        <input type="submit" value="Invia">
+    </form>
+</body>
+
+</html>
