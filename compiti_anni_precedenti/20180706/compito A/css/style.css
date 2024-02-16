@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+}
+
+
+
+table tr td,
+table tr th {
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+}
+
+thead tr:nth-child(2) {
+    background-color: orange;
+}
+
+thead tr:nth-child(3) {
+    background-color: coral;
+}
+
+thead tr:nth-child(4) {
+    background-color: lightseagreen;
+}
+
+thead tr:nth-child(5) {
+    background-color: lightblue;
+}
+
+thead tr:nth-child(6),
+th[scope="row"] {
+    background-color: lightskyblue;
+}
+
+thead td:nth-child(1) {
+    background-color: gray;
+    border-style: solid;
+    border-color: black;
+    border-width: 1.5px;
+}
+
+th[scope="row"] {
+    background-color: lightskyblue;
+    border-style: solid;
+    border-color: black;
+    border-width: 1.5px;
+}
+
+table {
+    border-collapse: collapse;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
